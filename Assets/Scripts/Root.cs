@@ -17,7 +17,6 @@ public class Root : MonoBehaviour
     void Start()
     {
         //Init game modules here
-        
         uiManager.Init();
     }
 }
