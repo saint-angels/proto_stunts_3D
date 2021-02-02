@@ -9,6 +9,7 @@ public class ObjectSpawner : MonoBehaviour
     public Transform spawnPoint = null;
     public Rotator objectPrefab = null;
     public float speed;
+    public float dropTimeScale;
     void Start()
     {
         
@@ -17,11 +18,14 @@ public class ObjectSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (Input.GetKeyDown(KeyCode.Space))
-       {
-           Rotator newObject = Instantiate(objectPrefab, spawnPoint); 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Rotator newObject = Instantiate(objectPrefab, spawnPoint); 
            ObjectSpawned(newObject);
-            newObject.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * speed);
-       } 
+           newObject.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * speed);
+            // Time.timeScale = dropTimeScale;
+            //Time.timeScale = dropTimeScale;
+            //asdfasdf
+        }
     }
 }

@@ -141,9 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a949f177bbc2d3b4f8ab25aae50de142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueMultiplier: 0.5
+  torqueMultiplier: 2
   rb: {fileID: 175030975402682851}
-  useGravity: 1
+  useGravity: 0
 --- !u!54 &175030975402682851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,8 +152,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172871859450051529}
   serializedVersion: 2
-  m_Mass: 0.01
-  m_Drag: 1
+  m_Mass: 1
+  m_Drag: 0.1
   m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
